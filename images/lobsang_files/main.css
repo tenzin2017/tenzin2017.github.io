@@ -1,0 +1,549 @@
+/*      CSS RESET   */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul,pre {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Base rules*/
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1ECD97;
+}
+p {
+    letter-spacing: 1px;
+}
+a:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
+.wrapper section {
+    margin-top: 50px;
+}
+.wrapper section h1 {
+    margin-bottom: 20px;
+}
+
+  /* Custom Starts Here */
+html, body {
+      height: 100%;
+      background: #eee;
+}
+.wrapper {
+    margin: 0 7rem;
+}
+
+.float-left{
+    float: left;
+    width: auto;
+}
+.brand{
+    width: 40%;
+    height: 80px;
+}
+.brand img{
+    width: 100%;
+}
+
+.float-right {
+    float: right;
+    font-size: 1rem;
+    text-transform: uppercase;
+    overflow: auto;
+}
+.float-right a {
+    text-decoration: none;
+    font-size: .8rem;
+    color: white;
+    letter-spacing: 2px;
+    padding: 20px;
+    display:inline-block;
+    position: relative;
+}
+.float-right a::after{
+    content: '';
+    display: block;
+    width: 0;
+    margin-top: 10px;
+    bottom: 2px;
+    height: 4px;
+    background: #1ECD97;
+    transition: width .5s,background 1s;
+    width: 0;
+}
+.float-right a:hover::after{
+    width: 100%;
+    background: #1ECD97;
+}
+.top-nav::after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+/* header section */
+
+header {
+    background-image: linear-gradient(to right,
+        rgba(0,0,0,0.8), 
+        rgba(0,0,0,0.7)
+      ), url(https://www.umbrellaconsultants.com/files/resources/outer-banks-web-development-hosting.jpg);
+    height: 100%;
+    background-size: cover;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.info {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    /* border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; */
+    /* border: solid 1px #1ECD97; */
+    /* box-shadow: 0 0 40px #eee; */
+}
+.info .name {
+    padding-right: 20px;
+    text-align: center;
+    align-self: center;
+}
+.name h1 {
+    /* font-weight: 700; */
+    letter-spacing: 3px;
+    font-size: 4em;
+}
+.name h3 {
+    text-transform: capitalize;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.typing {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 0;
+    color: green;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    border-right: 2px solid green;
+    width: 29ch;
+    animation: type 5s steps(29), blink 500ms steps(1) infinite;
+}
+@keyframes type {
+    from { width: 0ch}
+    to { width: 29}
+}
+@keyframes blink {
+    50% {border-color: transparent}
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-link a {
+    text-decoration: none;
+}
+.icon span{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: solid 1px white;
+    color: white;
+    vertical-align: middle;
+    text-align: center ;
+    margin-right: 15px;
+}
+.arrown-down{
+ margin: 0 auto;
+}
+/* About me section */
+
+.about-me {
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.about-me .photo {
+    width: 150%;
+    padding: 10px;
+}
+.description {
+    padding: 30px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+.description h1 {
+    background:#1ecd97;
+    display: table;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.description h3 {
+    margin-bottom: 10px;
+    background: #ddd;
+    display: table;
+}
+kbd {
+    background: black;
+    color:white;
+    padding: 2px 5px;
+}
+.buttons button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: solid 2px  #1ECD97;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:  #1ECD97;
+    cursor: pointer;
+}
+.buttons button:hover{
+    color: white;
+    background: #1ecd97;
+}
+pre {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+
+/* My skills Section*/
+.skills h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills h1::after{
+    content: "(Tech)";
+    display: inline;
+    text-transform: none;
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    color: #1ECD97;
+}
+
+.skill {
+    text-align: center;
+}
+.skill ul li {
+    letter-spacing: 2px;
+}
+.skill h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+.skill h3::after{
+    content:'';
+    width: 20%;
+    display: block;
+    height: 3px;
+    background: #1ECD97;
+}
+.skill i {
+    color: #1ECD97;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*------------------
+| Education & Work section 
+--------------------------*/
+.education-work-wrapper {
+    position: relative;
+}
+.education-work-wrapper::before{
+   content: '';
+   display: block;
+   position: absolute;
+   width: 8px;
+   height: 100%;
+   top: 0;
+   left: 220px;
+   background-color: gray;
+
+}
+.education-work-item {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+}
+.circle {
+    color: #1ECD97;
+    background: white;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: solid 3px #1ECD97;
+    top: 12px;
+    left: 212px;
+}
+.education-work-item .content-box {
+  width: 100%;
+  overflow: hidden;
+}
+.content-box .year {
+    width: 180px;
+    line-height: 20px;
+    text-align: center;
+    background:#1ECD97;
+    color: white;
+    margin-right: 85px;
+    padding: 15px 0;
+    float: left;
+}
+.content-box .year i {
+    padding: 0 5px;
+}
+.content-box .description {
+    overflow: hidden;
+    border: solid 1px #1ECD97;
+    background: white;
+}
+.company {
+    display: flex;
+    position: relative;
+}
+.company-image-box {
+ margin-right: 20px;
+}
+.company-image-box img {
+    width: 50px;
+    height: auto;
+}
+.company .position {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #1ECD97;
+    border-radius: 50%;
+    padding: 5px;
+}
+.position i {
+    color: #1ECD97;
+
+}
+ 
+/* Projects section */
+.projects-container 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.projects-container .project:nth-child(1),
+.projects-container .project:nth-child(2) {
+    margin-right: 20px;
+}
+.project {
+    border: solid 1px #ccc;
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #ccc;
+}
+.project .project-description {
+    padding: 10px;
+}
+.project-description h3 {
+    margin-bottom: 5px;
+}
+
+/* Contact me section */
+.contact-me {
+    background: #1ECD97;
+    height: 500px;
+}
+.contact-me h1 {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.contact-image {
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.contact-form {
+    background: #eee;
+    padding: 30px;
+    margin: 40px;
+    width: 50%;
+}
+.contact-form input {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    border: #eee;
+    padding-left: 5px;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color:gray;
+}
+.contact-form input[type="text"]{
+    text-transform: capitalize;
+}
+.contact-form textarea{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: #eee;
+    border-radius: 0 5px 5px 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: gray;
+
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color:gray;
+    opacity: .5;
+    padding-left: 5px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.contact-form textarea::placeholder{
+    padding-top: 5px;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+}
+.field .fas{
+    color: white;
+    background: #1ECD97;
+    padding: 5px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form button {
+    float:right;
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: solid 2px  #1ECD97;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:  #1ECD97;
+    cursor: pointer;
+}
+.contact-form button i {
+    padding-right: 5px;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background:#1a0000;
+    height: 300px;
+
+}
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    padding-top: 30px;
+   
+}
+
+.footer-logo {
+    width:33%;
+}
+.footer-logo img {
+    width: 100%;
+}
+.footer-logo p ,
+.footer-address .address p{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    font-size: .8rem;
+}
+.footer-logo p {
+    margin-top: -150px;
+}
+
+.address {
+    display: flex;
+    margin-bottom: 10px;
+}
+.address i {
+    margin-right: 10px;
+}
+.footer-social-icons a {
+    text-decoration: none;
+    display: inline-block;
+}
+.footer-social-icons h3 ,
+.footer-address h3{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 200;
+
+}
+.copyright{
+    color: white;
+    font-size: .9rem;
+    font-family: 'Raleway', sans-serif;
+    background: #1a0000;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
