@@ -828,6 +828,7 @@ pre {
         margin-left: 27px;
         padding-left: 20px;
         clip-path: none;
+        -webkit-clip-path: none;
     }
     .content-box .year {
         width: 159px;
