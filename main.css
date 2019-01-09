@@ -966,11 +966,10 @@ pre {
     .circle {
         left: -4px;
     }
-    .content-box .description {
+    .education-work-item .content-box .description {
         margin-top: 42px;
         margin-left: 40px;
         padding-left: 20px;
-        -webkit-clip-path: none;
         clip-path: none;
     }
     .content-box .year {
