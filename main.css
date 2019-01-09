@@ -863,7 +863,7 @@ pre {
     .side-menu-opener{
         cursor: pointer;
         height: 50px;
-        position: fixed;
+        position: absolute;
         top: 6px;
         right: 15px;
         -webkit-user-select: none;
@@ -875,7 +875,7 @@ pre {
     }
     .side-menu-opener:active, 
     .side-menu-opener.active {
-        background: #1ECD97;
+        /* background: #1ECD97; */
     }
     .side-menu-opener-inner {
         width: 36px;
