@@ -41,10 +41,17 @@ p {
     letter-spacing: 1px;
 }
 a:hover {
-    transform: scale(1.2) rotate(-10deg);
+    transform: scale(1.1);
+}
+
+.arrow-down:hover {
+    cursor: pointer;
 }
 .wrapper section {
     margin-bottom:  50px;
+}
+.wrapper section:nth-child(last) {
+    margin-bottom: 10px;
 }
 .wrapper section h1 {
     margin-bottom: 20px;
@@ -67,9 +74,9 @@ html, body {
     width: auto;
 }
 .brand{
-    padding: 0 20px;
-    width: 30%;
-    height: 80px;
+    padding: 5px 0 0 10px;
+    width: 20%;
+    
 }
 .brand img{
     width: 100%;
@@ -77,35 +84,43 @@ html, body {
 
 .float-right {
     float: right;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     overflow: auto;
+}
+nav.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    z-index: 1;
+    height: 80px;
+}
+ul.navbar-nav {
+    display: flex;
 }
 .float-right a {
     text-decoration: none;
     font-size: .8rem;
     color: white;
     letter-spacing: 2px;
-    padding: 20px;
     display:inline-block;
     position: relative;
+    padding: 5px;
 }
-.float-right a::after{
-    content: '';
-    display: block;
-    width: 0;
-    margin-top: 10px;
-    bottom: 2px;
-    height: 4px;
-    background: #1ECD97;
-    transition: width .5s,background 1s;
-    width: 0;
+.float-right li {
+    padding: 20px 0 5px;
+    margin-right: 30px;
 }
-.float-right a:hover::after{
-    width: 100%;
-    background: #1ECD97;
+.float-right .navbar-item.active{
+    border-bottom: solid 4px #1ECD97;
+    transform: translateY(-10px);
+    color: #1ECD97;
 }
-.top-nav::after{
+.float-right .navbar-item.active a {
+    color: #1ECD97;
+}
+.navbar::after{
     content: " ";
     clear: both;
     display: block;
@@ -127,10 +142,14 @@ header {
     margin-bottom: 50px;
 }
 .info {
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.profile-picture {
+    margin-top: 77px;
 }
 
 .profile-picture img {
@@ -142,6 +161,7 @@ header {
     /* box-shadow: 0 0 40px #eee; */
 }
 .info .name {
+    margin-top: 77px;
     padding-right: 20px;
     text-align: center;
     align-self: center;
@@ -559,7 +579,7 @@ pre {
 }
 
 .footer-logo {
-    width:33%;
+    width:25%;
 }
 .footer-logo img {
     width: 100%;
@@ -614,6 +634,15 @@ pre {
         font-size: 2rem;
     }
     /* header */
+    nav.navbar {
+        height: 70px;
+    }
+    .navbar-nav .navbar-item a {
+        font-size: 0.7rem;
+    }
+    .navbar .navbar-nav li.navbar-item {
+        margin-right: 20px;
+    }
     .wrapper {
         margin: 0 3rem;
     }
@@ -698,6 +727,15 @@ pre {
         font-size: 2rem;
     }
     /* header */
+    nav.navbar {
+        height: 65px;
+    }
+    .navbar-nav .navbar-item a {
+        font-size: 0.6rem;
+    }
+    .navbar .navbar-nav li.navbar-item {
+        margin-right: 10px;
+    }
     .wrapper {
         margin: 0 2rem;
     }
@@ -774,12 +812,112 @@ pre {
        width: 70%;
      }
 
+     /*foofter*/
+     .footer-address {
+         margin-right: 15px;
+     }
+
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 604px) {
     h1 {
         font-size: 1.3rem;
     }
+    /* header */
+    .navbar .navbar-nav{
+        display: none;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        opacity: 0.8;
+        margin-top: 65px;
+        padding-left: 20px;
+    }
+    .navbar .navbar-nav.active {
+        display: block;
+    }
+    .navbar .navbar-item.active{
+        border-bottom: solid 4px #1ECD97;
+        width: 60%;
+        margin-left: 10px;
+        /* transform: translateY(-10px); */
+        color: #1ECD97;
+    }
+    .brand {
+        width: 35%;
+    }
+    .info .name {
+        margin-top: 30px;
+    }
+
+    /* side menu opener */
+    .side-menu-opener, 
+    .side-menu-opener:hover, 
+    .side-menu-opener.active, 
+    .side-menu-opener-inner, 
+    .side-menu-opener-inner::before, 
+    .side-menu-opener-inner::after{
+        -webkit-transition: 500ms all;
+        transition: 500ms all;
+      }
+    .side-menu-opener{
+        cursor: pointer;
+        height: 50px;
+        position: absolute;
+        top: 6px;
+        right: 15px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 50px;
+        z-index: 2;
+    }
+    .side-menu-opener:hover, 
+    .side-menu-opener.active {
+        background: #1ECD97;
+    }
+    .side-menu-opener-inner {
+        width: 36px;
+        height: 4px;
+        background: white;
+        position: fixed;
+        top: 28px;
+        right: 21px;
+        z-index: 2;
+    }
+    .side-menu-opener-inner::before,
+    .side-menu-opener-inner::after {
+        content: '';
+        width: 36px;
+        height: 4px;
+        background: white;
+        display: block;
+    }
+    .side-menu-opener-inner::before {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    .side-menu-opener-inner::after {
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+    .side-menu-opener-inner.active {
+        background: transparent;
+      }
+      .side-menu-opener-inner.active::before {
+        -webkit-transform: translateY(0rem) rotate(-45deg);
+        -ms-transform: translateY(0rem) rotate(-45deg);
+        transform: translateY(0rem) rotate(-45deg);
+      }
+      .side-menu-opener-inner.active::after {
+        -webkit-transform: translateY(-0.3rem) translateX(0rem) rotate(45deg);
+        -ms-transform: translateY(-0.3rem) translateX(0rem) rotate(45deg);
+        transform: translateY(-0.3rem) translateX(0rem) rotate(45deg);
+      }
+    
     .wrapper {
         margin: 0 1.8rem;
     }
@@ -815,6 +953,11 @@ pre {
     .about-me h3 {
         left: 35%;
     }
+    /* skill */
+    .skill h3::after {
+        width: 50%;
+        margin: 0 auto;
+    }
 
     /* education & work */
     .education-work-wrapper::before {
@@ -824,17 +967,15 @@ pre {
         left: -4px;
     }
     .content-box .description {
-        margin-top: 40px;
-        padding: 20px 15px;
-        margin-left: 35px;
+        margin-top: 42px;
+        margin-left: 40px;
+        padding-left: 20px;
         clip-path: none;
     }
     .content-box .year {
-        width: 165px;
-        padding: 5px 0;
-        padding-left: 20px;
-        margin-left: 22px;
-        margin-top: 5px;
+        width: 171px;
+        margin-left: 27px;
+        padding: 10px 5px 10px 23px;
         -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
         clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
     }
@@ -863,7 +1004,7 @@ pre {
         position: absolute;
         top: 32px;
         left: 20px;
-        width: 40%;
+        width: 35%;
     }
     .footer-social-icons {
         position: absolute;
@@ -890,23 +1031,26 @@ pre {
     .hide {
         display: none;
     }
-   
+  
 
     /* header */
-    .name h1 {
-        font-size: 1.5rem;
+    .info .name h1 {
+        font-size: 1.9rem;
+    }
+    .info .name {
+        padding: 0 10px;
     }
     nav .float-right {
         display: none;
     }
     .brand {
-        width: 52%;
+        width: 35%;
     }
+    
     .typing {
-        font-size: 0.8rem;
-        margin: 0;
+        font-size: 1.1rem;
         text-align: center;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
    /* about me */
     .wrapper {
@@ -959,8 +1103,13 @@ pre {
         display: block;
     }
 
+    /* skill */
+    .skill h3::after {
+        width: 20%;
+    }
+
     /* education & work experience */
-    /* .content-box .description {
+    .content-box .description {
         margin-top: 40px;
         padding: 20px 15px;
         margin-left: 35px;
@@ -973,7 +1122,7 @@ pre {
         margin-top: 5px;
         -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
         clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
-    } */
+    }
     .company {
         flex-direction: column;
     }
@@ -1004,7 +1153,7 @@ pre {
 
     /* footer */
     .footer-logo {
-        font-size: 45%;
+        font-size: 35%;
     }
     .footer-social-icons a.icon {
         font-size: 0.9rem;
