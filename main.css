@@ -863,7 +863,7 @@ pre {
     .side-menu-opener{
         cursor: pointer;
         height: 50px;
-        position: absolute;
+        position: fixed;
         top: 6px;
         right: 15px;
         -webkit-user-select: none;
