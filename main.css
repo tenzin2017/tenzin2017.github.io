@@ -970,7 +970,7 @@ pre {
         margin-top: 42px;
         margin-left: 40px;
         padding-left: 20px;
-        clip-path: none;
+        clip-path: none !important;
     }
     .content-box .year {
         width: 171px;
