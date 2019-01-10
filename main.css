@@ -1104,22 +1104,18 @@ pre {
         display: block;
     }
 
-    @media screen and (max-width: 480px) and (orientation: portrait) {
-        .content-box .description {
-            clip-path: none;
-        }
-    }
-
     /* skill */
     .skill h3::after {
         width: 20%;
     }
 
     /* education & work experience */
-    .content-box .description {
+    .education-work-wrapper .education-work-item .content-box .description {
         margin-top: 40px;
         padding: 20px 15px;
         margin-left: 35px;
+        clip-path: none;
+        -webkit-clip-path: none;
     }
     .content-box .year {
         width: 165px;
