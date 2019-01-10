@@ -782,6 +782,10 @@ pre {
     .skill h3 {
         font-size: 1.1rem;
     }
+    .skill h3::after {
+        width: 50%;
+        margin: 0 auto;
+    }
     .skill h3 span {
         display: none;
     }
