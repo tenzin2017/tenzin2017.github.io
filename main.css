@@ -409,8 +409,8 @@ pre {
     background: white;
     position: relative;
     padding-left: 50px;
-    -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 4% 100%, 4% 15%, 0 10%, 4% 4%);
-    clip-path: polygon(4% 0, 100% 0%, 100% 100%, 4% 100%, 4% 15%, 0 10%, 4% 4%);
+    /* -webkit-clip-path: polygon(4% 0, 100% 0%, 100% 100%, 4% 100%, 4% 15%, 0 10%, 4% 4%);
+    clip-path: polygon(4% 0, 100% 0%, 100% 100%, 4% 100%, 4% 15%, 0 10%, 4% 4%); */
 }
 .company {
     display: flex;
