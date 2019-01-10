@@ -1104,6 +1104,12 @@ pre {
         display: block;
     }
 
+    @media screen and (max-width: 480px) and (orientation: portrait) {
+        .content-box .description {
+            clip-path: none;
+        }
+    }
+
     /* skill */
     .skill h3::after {
         width: 20%;
