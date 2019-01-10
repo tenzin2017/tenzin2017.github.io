@@ -1110,7 +1110,7 @@ pre {
     }
 
     /* education & work experience */
-    .education-work-wrapper .education-work-item .content-box .description {
+    .content-box .description {
         margin-top: 40px;
         padding: 20px 15px;
         margin-left: 35px;
