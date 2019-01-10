@@ -1119,8 +1119,8 @@ pre {
         padding-left: 20px;
         margin-left: 22px;
         margin-top: 5px;
-        /* -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
-        clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%); */
+        -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
+        clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
     }
     .company {
         flex-direction: column;
