@@ -1113,6 +1113,7 @@ pre {
         margin-top: 40px;
         padding: 20px 15px;
         margin-left: 35px;
+        clip-path: none;
     }
     .content-box .year {
         width: 165px;
