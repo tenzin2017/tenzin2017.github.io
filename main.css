@@ -976,8 +976,8 @@ pre {
         width: 171px;
         margin-left: 27px;
         padding: 10px 5px 10px 23px;
-        -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
-        clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
+        /* -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
+        clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%); */
     }
     .company .position {
         width: 50px;
@@ -1113,7 +1113,6 @@ pre {
         margin-top: 40px;
         padding: 20px 15px;
         margin-left: 35px;
-        clip-path: none;
     }
     .content-box .year {
         width: 165px;
@@ -1121,8 +1120,8 @@ pre {
         padding-left: 20px;
         margin-left: 22px;
         margin-top: 5px;
-        -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
-        clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
+        /* -webkit-clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%);
+        clip-path: polygon(9% 0, 100% 0%, 100% 100%, 9% 100%, 9% 69%, 0 43%, 9% 24%); */
     }
     .company {
         flex-direction: column;
