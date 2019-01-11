@@ -303,9 +303,8 @@ header {
     color: white;
     background: #1ecd97;
 }
-button:active {
-    outline: none;
-    border: none;
+button:focus, button:active{
+    outline: none !important;
 }
 .buttons button:hover i {
     color: white;
