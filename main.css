@@ -1111,6 +1111,10 @@ pre {
         padding: 5px 10px;
         font-size: 1rem;
     }
+    button:active {
+        outline: none;
+        border: none;
+    }
     .resume i,
     .hire-me i {
         display: block;
