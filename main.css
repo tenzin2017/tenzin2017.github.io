@@ -303,7 +303,7 @@ header {
     color: white;
     background: #1ecd97;
 }
-.buttons button:active {
+button:active {
     outline: none;
     border: none;
 }
