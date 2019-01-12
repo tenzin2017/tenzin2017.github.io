@@ -193,7 +193,7 @@ header {
     margin: 0 auto;
     border-right: 2px solid green;
     width: 29ch;
-    animation: type 2s steps(29), blink 500ms steps(1) infinite;
+    animation: type 6s steps(29), blink 500ms steps(1) infinite;
 }
 @keyframes type {
     from { width: 0ch}
