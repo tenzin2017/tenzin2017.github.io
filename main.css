@@ -125,6 +125,11 @@ ul.navbar-nav {
     clear: both;
     display: block;
 }
+.buttons a:active,
+.buttons button:active,
+form button:active {
+    transform: scale(0.95);
+}
 
 /* header section */
 
@@ -1106,11 +1111,7 @@ pre {
         padding: 5px 10px;
         font-size: 1rem;
     }
-    .buttons a:active,
-    .buttons button:active,
-    form button:active {
-        transform: scale(0.95);
-    }
+    
     .resume i,
     .hire-me i {
         display: block;
