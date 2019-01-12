@@ -884,10 +884,6 @@ pre {
         width: 50px;
         z-index: 2;
     }
-    .side-menu-opener:active, 
-    .side-menu-opener.active {
-        /* background: #1ECD97; */
-    }
     .side-menu-opener-inner {
         width: 36px;
         height: 4px;
