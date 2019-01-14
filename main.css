@@ -132,6 +132,9 @@ form button:active
     transform: scale(0.95);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
+.project-description h3 {
+    text-transform: capitalize;
+}
 
 /* header section */
 
