@@ -309,6 +309,7 @@ header {
     font-size: 1.2rem;
     color:  #1ECD97;
     cursor: pointer;
+    background: transparent;
 }
 .buttons button:hover{
     color: white;
