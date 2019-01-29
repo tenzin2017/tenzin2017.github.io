@@ -48,7 +48,7 @@ a:hover {
     cursor: pointer;
 }
 .wrapper section {
-    margin-bottom:  50px;
+    margin-bottom:  70px;
 }
 .wrapper section:nth-child(last) {
     margin-bottom: 10px;
