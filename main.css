@@ -1043,6 +1043,9 @@ pre {
         position: absolute;
         bottom: 24px;
     }
+    .hide {
+        display: none;
+    }
 
 }
 
