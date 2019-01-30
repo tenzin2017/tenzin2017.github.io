@@ -745,7 +745,11 @@ pre {
     }
     /* header */
     nav.navbar {
+        
         height: 65px;
+    }
+    .brand.float-left {
+        width: 177px;
     }
     .navbar-nav .navbar-item a {
         font-size: 0.6rem;
@@ -1042,9 +1046,6 @@ pre {
     .footer-address {
         position: absolute;
         bottom: 24px;
-    }
-    .hide {
-        display: none;
     }
 
 }
